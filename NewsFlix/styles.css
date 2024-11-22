@@ -1,0 +1,451 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: black;
+}
+
+header {
+    background-color: black;
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    margin-left: auto;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #e50914;
+}
+
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+    background-image: url('img/fon.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-content {
+    max-width: 50%;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    color: red;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.categories {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.categories h2 {
+    font-size: 24px;
+    color: red;
+}
+
+.categories p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.category-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.category {
+    text-align: center;
+    max-width: 200px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.category img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.category span {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: black;
+}
+
+header {
+    background-color: black;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    color: red;
+    font-weight: bold;
+}
+
+.search-icon {
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+.register-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('img/fondo.jpg'); /* Fondo de la página */
+    background-size: cover;
+    background-position: center;
+}
+
+.form-container {
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente */
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.form-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+}
+
+.form-group input::placeholder {
+    color: #aaa;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #e50914;
+    color: white;
+}
+
+.policy-text {
+    font-size: 12px;
+    color: #bbb;
+    margin-top: 15px;
+}
+
+.policy-text a {
+    color: #e50914;
+    text-decoration: none;
+}
+
+.login-link {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.login-link a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('img/fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+header {
+    background: #000;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo {
+    color: #e50914;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.logo-newsflix h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.logo-newsflix .news {
+    color: #e50914;
+}
+
+.logo-newsflix .flix {
+    color: #fff;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.user-icon {
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    text-align: left;
+    font-size: 14px;
+}
+
+form input[type="text"],
+form input[type="password"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    color: #fff;
+}
+
+form input::placeholder {
+    color: #aaa;
+}
+
+form .remember {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+}
+
+.btn {
+    background: #e50914;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background: #f40612;
+}
+
+.create-account {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.create-account:hover {
+    text-decoration: underline;
+}
+
+
+/* Fondo para el frame principal */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('img/fondo.jpg') no-repeat center center fixed; /* Asegúrate de usar una imagen adecuada */
+            background-size: cover;
+        }
+
+        /* Estilos del header */
+        .navbar {
+            display: flex;
+            justify-content: space-between; /* Alinea los elementos del navbar */
+            align-items: center;
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente */
+            color: #fff;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #e50914; /* Color rojo de Netflix */
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+        }
+
+        nav ul li a:hover {
+            color: #e50914; /* Resaltar en rojo al pasar el mouse */
+        }
+
+        /* Hero section */
+        .hero {
+            padding: 60px 20px;
+            text-align: center;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente sobre la imagen */
+            margin: 50px 20px; /* Separación del contenido */
+            border-radius: 10px; /* Bordes redondeados */
+        }
+
+        .hero-content h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* Categorías */
+        .categories {
+            margin-top: 30px;
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adaptativo */
+            gap: 20px;
+        }
+
+        .category {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .category img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .category span {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #333;
+        }

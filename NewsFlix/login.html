@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - Newsflix</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">NETFLIX</div>
+        </div>
+    </header>
+    <main>
+        <div class="login-container">
+            <div class="logo-newsflix">
+                <h1><span class="news">News</span><span class="flix">Flix</span></h1>
+            </div>
+            <h2>Iniciar Sesión <i class="user-icon">👤</i></h2>
+            <form id="loginForm">
+                <label for="username">Usuario/Correo Electrónico</label>
+                <input type="text" id="username" placeholder="Ingrese Usuario o Correo Electrónico" required>
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" placeholder="Ingrese Contraseña" required>
+                <div class="remember">
+                    <input type="checkbox" id="rememberMe">
+                    <label for="rememberMe">Guardar Contraseña</label>
+                </div>
+                <button type="submit" class="btn">Ingresar</button>
+            </form>
+            <p><a href="registrarse.html" class="create-account">Crear Cuenta</a></p>
+        </div>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
