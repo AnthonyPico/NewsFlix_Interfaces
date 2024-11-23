@@ -451,115 +451,114 @@ form .remember {
         }
 
 
-        /**/
+    /**/
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #1e1e1e;
-            color: white;
+            background-color: white; /* Fondo blanco */
         }
-        
+
         header {
-            background-color: black;
-            padding: 10px 20px;
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-        
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-        }
-        
-        .nav-links {
-            list-style: none;
+
+        .navbar {
             display: flex;
-            gap: 20px;
-            margin: 0;
+            gap: 15px;
         }
-        
-        .nav-links a {
+
+        .navbar a {
+            color: #fff;
             text-decoration: none;
-            color: white;
-            font-size: 16px;
-        }
-        
-        .nav-links a:hover, .nav-links a.active {
-            color: red;
-        }
-        
-        .user-icon img {
-            width: 30px;
-            height: 30px;
-        }
-        
-        .hero {
-            text-align: center;
-            padding: 20px;
-            background-color: #282828;
-            margin: 20px;
-            border-radius: 10px;
-        }
-        
-        .featured-news {
-            display: flex;
-            gap: 20px;
-            margin: 20px;
-        }
-        
-        .featured-article {
-            flex: 1;
-            background-color: #333;
-            border-radius: 10px;
-            padding: 10px;
-        }
-        
-        .featured-article img {
-            width: 100%;
-            border-radius: 10px;
-        }
-        
-        .news-highlights ul {
-            list-style: none;
-            padding: 0;
-        }
-        
-        .news-highlights li {
-            background-color: #333;
-            margin: 10px 0;
-            padding: 10px;
-            border-radius: 10px;
-        }
-        
-        .mini-gallery {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            margin: 20px;
-        }
-        
-        .mini-gallery div img {
-            width: 100px;
+            padding: 5px 10px;
             border-radius: 5px;
         }
-        
-        footer {
-            background-color: black;
-            padding: 20px;
-            text-align: center;
+
+        .navbar a.active {
+            background-color: red;
         }
-        
-        .footer-links {
-            list-style: none;
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Estilo principal y derecho */
+        .main-content {
+            flex: 3;
+        }
+
+        .right-section {
+            flex: 1;
+            margin-left: 20px;
+        }
+
+        .highlighted-content, .secondary-content {
             display: flex;
             gap: 20px;
-            justify-content: center;
-            padding: 0;
+            margin-bottom: 20px;
         }
-        
-        .social-icons img {
-            width: 20px;
+
+        .highlighted-content .item,
+        .secondary-content .item {
+            flex: 1;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .item img {
+            width: 100%;
+            display: block;
+        }
+
+        .item h3 {
+            font-size: 1.2em;
+            margin: 10px;
+        }
+
+        .item p {
+            font-size: 1em;
+            margin: 10px;
+            color: #666;
+        }
+
+        /* Sección derecha */
+        .right-section .news-item {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .right-section img {
+            width: 120px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .right-section h4 {
+            font-size: 1em;
+            margin: 0;
+        }
+
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
             margin: 0 10px;
         }
-        
