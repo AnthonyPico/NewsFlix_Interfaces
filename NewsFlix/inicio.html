@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio - Newsflix</title>
     <link rel="stylesheet" href="inicio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
 </head>
 <body>
     <header>
-        <div class="logo">NewsFlix</div>
+        <div class="logo">
+            <img src="img/logo.png" alt="Newsflix Logo" class="logo-img">
+        </div>
         <nav class="navbar">
             <a href="inicio.html" class="active">Inicio</a>
             <a href="noticias.html">Noticias</a>
@@ -16,12 +20,19 @@
             <a href="entrevistas.html">Entrevistas</a>
             <a href="adelantos.html">Adelantos</a>
         </nav>
+        <div class="search-bar">
+            <form action="buscar.html" method="GET">
+                <input type="text" name="query" placeholder="Buscar..." class="search-input">
+                <button type="submit" class="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
     </header>
     <main class="content">
         <!-- Contenido Principal -->
         <div class="main-content">
             <section>
-                <h2>Sección: Inicio</h2>
                 <p>
                     Tu fuente de noticias actualizadas y exclusivas sobre todo lo que ocurre en las plataformas de streaming. 
                     Descubre los últimos lanzamientos, reseñas de series y películas, entrevistas con actores y directores, 
@@ -33,31 +44,33 @@
             <section class="highlighted-content">
                 <div class="item">
                     <img src="img/scream6.jpg" alt="El final de Scream 6">
+                    <div class="overlay">Abrir</div>
                     <h3>El final de Scream 6, explicado: ¿Quién es el nuevo Ghostface?</h3>
-                    <p>Exploramos cómo este final redefine la franquicia con giros inesperados y emoción.</p>
                 </div>
                 <div class="item">
                     <img src="img/robots.jpg" alt="Love, Death + Robots Temporada 3">
+                    <div class="overlay">Abrir</div>
                     <h3>LOVE, DEATH + ROBOTS: Temporada 3 - Más muerte que amor.</h3>
-                    <p>Una mirada a los episodios más impactantes de la tercera entrega de esta antología animada.</p>
                 </div>
             </section>
+
+            <h3>Videos que quizas te interesen:</h3>
 
             <section class="secondary-content">
                 <div class="item">
                     <img src="img/onepiece.jpg" alt="Netflix Family">
+                    <div class="overlay">Abrir</div>
                     <h3>Netflix Family</h3>
-                    <p>Descubre el nuevo contenido familiar que Netflix tiene para ofrecer.</p>
                 </div>
                 <div class="item">
                     <img src="img/kitconnor.jpg" alt="Kit Connor y Joe Locke">
+                    <div class="overlay">Abrir</div>
                     <h3>Kit Connor y Joe Locke: Love en todos los sentidos.</h3>
-                    <p>Entrevista exclusiva con los actores detrás de las escenas de su nuevo proyecto.</p>
                 </div>
                 <div class="item">
                     <img src="img/detrasdecamaras.webp" alt="Detrás de cámaras">
+                    <div class="overlay">Abrir</div>
                     <h3>Detrás de cámaras</h3>
-                    <p>Un vistazo a cómo se crean tus series favoritas desde adentro.</p>
                 </div>
             </section>
         </div>
