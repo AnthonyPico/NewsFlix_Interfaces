@@ -1,0 +1,144 @@
+/* Navbar.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white; /* Fondo blanco */
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.navbar a.active {
+    background-color: red;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 100px; /* Cambia el ancho del logo */
+    height: auto; /* Mantiene las proporciones */
+    margin-right: 20px; /* Espacio entre el logo y la barra de navegación */
+}
+
+
+/* Footer.css */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+
+/* Hero.css */
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+    background-image: url('img/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-content {
+    max-width: 50%;
+    background-color: #1e1d1d99;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    color: rgb(185, 7, 7);
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    line-height: 1.5;
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.categories {
+    margin-top: 40px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.categories h2 {
+    font-size: 24px;
+    color: red;
+}
+
+.categories p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.category-grid {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.category {
+    text-align: center;
+    max-width: 200px;
+    background-color: #1e1d1d99;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.category img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.category span {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
