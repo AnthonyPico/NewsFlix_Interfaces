@@ -11,8 +11,11 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
     const password = document.getElementById("password").value;
 
     // Simula la validación (esto se conectaría a un servidor real en producción)
-    if (username === "admin" && password === "12345") {
+    if (username === "Anton" && password === "12345" ||
+        username === "Julissa" && password === "12345" ||
+        username === "Marcelo" && password === "12345") {
         alert("Inicio de sesión exitoso. ¡Bienvenido a Newsflix!");
+        window.location.href = "inicio.html";
     } else {
         alert("Usuario o contraseña incorrectos. Inténtalo nuevamente.");
     }
