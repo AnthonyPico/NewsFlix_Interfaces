@@ -57,3 +57,104 @@ footer a {
 
 
 /* Registrarse.css */
+
+.register{
+    text-align: center;
+    padding: 40px 20px;
+    background-image: url('img/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.register-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.form-container {
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente */
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.form-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: white;
+}
+
+.form-group input::placeholder {
+    color: #aaa;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #e50914;
+    color: white;
+}
+
+.policy-text {
+    font-size: 12px;
+    color: #bbb;
+    margin-top: 15px;
+}
+
+.policy-text a {
+    color: #e50914;
+    text-decoration: none;
+}
+
+.login-link {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.login-link a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
