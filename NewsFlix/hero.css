@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: white; /* Fondo blanco */
+    background-color: rgb(77, 74, 74); /* Fondo blanco */
 }
 
 header {
@@ -142,3 +142,93 @@ footer a {
     font-size: 14px;
     font-weight: bold;
 }
+
+
+
+
+
+
+
+
+.register{
+    text-align: center;
+    padding: 40px 20px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.register-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.form-container {
+    background-color: rgba(39, 35, 35, 0.8); /* Fondo semi-transparente */
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.form-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left; /* Alinea las etiquetas a la izquierda */
+}
+
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #333;
+    color: #fff;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #aaa;
+}
+
+textarea {
+    resize: none;
+}
+
+/* Botón de envío */
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Animación suave */
+}
+
+.submit-btn:hover {
+    background-color: #f6121d;
+    transform: scale(1.1); /* Incrementa el tamaño al pasar el mouse */
+}
+
