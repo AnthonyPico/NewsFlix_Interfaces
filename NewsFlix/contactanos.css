@@ -54,7 +54,8 @@ header {
 .search-bar {
     display: flex;
     align-items: center;
-    margin-left: auto; /* Empuja la barra de búsqueda hacia la derecha */
+    margin-left: auto;
+    position: relative;
 }
 
 /* Input de búsqueda */
@@ -139,4 +140,54 @@ footer a {
     margin-bottom: 20px;
 }
 
+
+
+
+
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left; /* Alinea las etiquetas a la izquierda */
+}
+
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #333;
+    color: #fff;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #aaa;
+}
+
+textarea {
+    resize: none;
+}
+
+/* Botón de envío */
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Animación suave */
+}
+
+.submit-btn:hover {
+    background-color: #f6121d;
+    transform: scale(1.1); /* Incrementa el tamaño al pasar el mouse */
+}
 
