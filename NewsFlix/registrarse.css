@@ -1,10 +1,15 @@
-/* Navbar.css */
+/* ============================
+   General Styles
+============================ */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: white; /* Fondo blanco */
 }
 
+/* ============================
+   Navbar Styles
+============================ */
 header {
     background-color: #000;
     color: #fff;
@@ -13,6 +18,7 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+
 .navbar {
     display: flex;
     gap: 15px;
@@ -35,30 +41,86 @@ header {
 }
 
 .logo-img {
-    width: 100px; /* Cambia el ancho del logo */
-    height: auto; /* Mantiene las proporciones */
-    margin-right: 20px; /* Espacio entre el logo y la barra de navegación */
+    width: 100px; 
+    height: auto; 
+    margin-right: 20px; 
 }
 
-
-/* Footer.css */
+/* ============================
+   Footer Styles
+============================ */
 footer {
     background-color: #000;
     color: #fff;
-    text-align: center;
-    padding: 10px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
 }
 
-footer a {
+.footer-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-logo {
+    height: 50px;
+    width: auto;
+}
+
+.footer-left nav a {
     color: #fff;
     text-decoration: none;
     margin: 0 10px;
+    font-size: 16px;
 }
 
+.footer-left nav a:hover {
+    text-decoration: underline;
+}
 
-/* Registrarse.css */
+footer nav a:hover {
+    color: #ff0000;
+}
 
-.register{
+.footer-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-right p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+}
+
+.social-link {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: red;
+}
+
+/* ============================
+   Register Section Styles
+============================ */
+.register {
     text-align: center;
     padding: 40px 20px;
     background-image: url('img/fondo.jpg');
@@ -77,10 +139,10 @@ footer a {
 }
 
 .form-container {
-    background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente */
+    background-color: rgba(0, 0, 0, 0.8); 
     padding: 30px;
     border-radius: 10px;
-    max-width: 400px;
+    max-width: 400px; 
     width: 100%;
     text-align: center;
 }
@@ -90,6 +152,7 @@ footer a {
     margin-bottom: 20px;
 }
 
+/* Form Group Styles */
 .form-group {
     margin-bottom: 15px;
     text-align: left;
@@ -102,21 +165,22 @@ footer a {
 }
 
 .form-group input {
-    width: 100%;
+    width: 97%; 
     padding: 10px;
     font-size: 14px;
     border: none;
     border-radius: 5px;
     background-color: #ffffff;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .form-group input::placeholder {
     color: #aaa;
 }
 
+/* Submit Button Styles */
 .submit-btn {
-    width: 105%;
+    width: 102%; 
     padding: 12px;
     font-size: 16px;
     font-weight: bold;
@@ -133,6 +197,7 @@ footer a {
     color: white;
 }
 
+/* Text and Links Styles */
 .policy-text {
     font-size: 12px;
     color: #bbb;

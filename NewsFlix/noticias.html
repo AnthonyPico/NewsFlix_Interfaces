@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio - Newsflix</title>
     <link rel="stylesheet" href="noticias.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
 </head>
+
 <body>
+    <!-- Encabezado -->
     <header>
         <div class="logo">
             <img src="img/logo.png" alt="Newsflix Logo" class="logo-img">
         </div>
         <nav class="navbar">
-            <a href="inicio.html" >Inicio</a>
-            <a href="noticias.html"class="active">Noticias</a>
+            <a href="inicio.html">Inicio</a>
+            <a href="noticias.html" class="active">Noticias</a>
             <a href="resenas.html">Reseñas</a>
             <a href="entrevistas.html">Entrevistas</a>
             <a href="adelantos.html">Adelantos</a>
             <a class="fa-solid fa-user user-icon" href="user.html"></a>
-
         </nav>
         <div class="search-bar">
             <form action="buscar.html" method="GET">
@@ -32,12 +33,20 @@
         </div>
     </header>
 
+    <!-- Contenido Principal -->
     <main>
+        <!-- Sección de Noticias -->
         <section class="news-section">
             <h2>Sección: <span style="color: red;">Noticias</span></h2>
-            <p>Apartado donde encontrarás las últimas noticias sobre los estrenos de la plataforma y el mundo del cine en general.</p>
-            
-            <!-- Sección de Series -->
+            <p>
+                Bienvenido a nuestra sección de <strong>Noticias</strong>, el espacio perfecto para mantenerte al día con 
+                las novedades más relevantes del mundo del cine, las series y los documentales. Aquí encontrarás 
+                información detallada sobre los próximos estrenos, proyectos en desarrollo, entrevistas con tus 
+                estrellas favoritas y mucho más. Sumérgete en el universo del entretenimiento y descubre las últimas 
+                tendencias que están marcando la industria.
+            </p>
+
+            <!-- Categoría: Series -->
             <div class="news-category">
                 <h3>Series</h3>
                 <div class="news-grid">
@@ -58,8 +67,8 @@
                     </div>
                 </div>
             </div>
-            
-            <!-- Sección de Películas -->
+
+            <!-- Categoría: Películas -->
             <div class="news-category">
                 <h3>Películas</h3>
                 <div class="news-grid">
@@ -80,85 +89,98 @@
                     </div>
                 </div>
             </div>
-            
+
+            <!-- Enlace Ver Más -->
             <div class="view-more">
                 <a href="noticias.html">Ver más</a>
             </div>
         </section>
+
+        <!-- Noticias Recientes -->
+        <aside class="right-section">
+            <h3>Noticias Recientes</h3>
+            <div class="news-item">
+                <img src="img/noticias/tombraider.jpg" alt="Tomb Raider">
+                <div>
+                    <h4>El anime de Tomb Raider en Netflix confirma fecha de estreno en su nuevo tráiler</h4>
+                    <p class="author">Por Anton</p>
+                    <p class="description">
+                        Netflix continúa explorando el universo del anime con un gran nombre del mundo de los videojuegos. 
+                        "Tomb Raider: La Leyenda de Lara Croft" promete ser una adaptación fiel y emocionante de las 
+                        aventuras de la icónica arqueóloga. Su estreno está programado para el próximo 10 de octubre, y 
+                        el tráiler ya ha generado gran expectación entre los fanáticos de la franquicia.
+                    </p>
+                </div>
+            </div>
+            <div class="news-item">
+                <img src="img/noticias/arcane.avif" alt="Arcane">
+                <div>
+                    <h4>Arcane: Todo lo que has de saber de la Temporada 2 de la serie de League of Legends</h4>
+                    <p class="author">Por Julissa</p>
+                    <p class="description">
+                        La exitosa serie animada "Arcane", basada en el universo de League of Legends, está de regreso con 
+                        nuevos detalles sobre su esperada segunda temporada. Con un enfoque en la narrativa y la animación 
+                        de alta calidad, la serie promete explorar más profundamente las historias de Vi, Jinx y otros personajes 
+                        icónicos del juego. ¿Qué nuevas alianzas y conflictos nos esperan?
+                    </p>
+                </div>
+            </div>
+            <div class="news-item">
+                <img src="img/noticias/calamar.jpg" alt="El juego del calamar">
+                <div>
+                    <h4>Mira el primer tráiler de "El juego del calamar temporada 2" que promete regresar con escalofriantes pruebas</h4>
+                    <p class="author">Por Anton</p>
+                    <p class="description">
+                        "El juego del calamar" está de regreso con una segunda temporada llena de tensión y misterio. 
+                        El tráiler nos adelanta que los participantes enfrentan pruebas aún más escalofriantes mientras 
+                        luchan por su supervivencia. Con nuevas reglas y desafíos, esta temporada promete mantener a los 
+                        espectadores al borde de sus asientos. ¿Te atreverías a jugar?
+                    </p>
+                </div>
+            </div>
+            <div class="news-item">
+                <img src="img/noticias/godzilla.jpeg" alt="Sin novedad en el frente">
+                <div>
+                    <h4>Sin novedad en el frente triunfa en los Oscar</h4>
+                    <p class="author">Por Anton</p>
+                    <p class="description">
+                        La épica película bélica "Sin novedad en el frente" ha hecho historia en los Premios Óscar 2024, 
+                        llevándose prestigiosos galardones, incluyendo Mejor Película. Su poderosa narrativa y 
+                        cinematografía han conquistado tanto al público como a la crítica, consolidándola como una obra 
+                        maestra del cine moderno.
+                    </p>
+                </div>
+            </div>
+        </aside>
     </main>
 
-
-
-
-
-
-<!-- Sección Derecha -->
-<aside class="right-section">
-    <h3>Noticias Recientes</h3>
-    <div class="news-item">
-        <img src="img/noticias/tombraider.jpg" alt="Nebula">
-        <div>
-            <h4>El anime de Tomb Raider en Netflix confirma fecha de estreno en su nuevo tráiler</h4>
-            <p class="author">Por Anton</p>
-            <p class="description">Netflix vuelve a apostar por un gran nombre de la industria del videojuego. 'Tomb Raider: La Leyenda de Lara Croft' llegará a Netflix el proximo 10 de octubre.</p>
-        </div>
-    </div>
-    <div class="news-item">
-        <img src="img/noticias/arcane.avif" alt="El atraco del siglo">
-        <div>
-            <h4>Arcane: Todo lo que has de saber de la Temporada 2 de la serie de League of Legends</h4>
-            <p class="author">Por Julissa</p>
-            <p class="description">La segunda temporada de Arcane ya cuenta con nuevos detalles al respecto que no te puedes perder.</p>
-        </div>
-    </div>
-    <div class="news-item">
-        <img src="img/noticias/calamar.jpg" alt="Proyectos de cine latino">
-        <div>
-            <h4>Mira el primer tráiler de "El juego del calamar temporada 2" que promete regresar con escalofriantes pruebas</h4>
-            <p class="author">Por Anton</p>
-            <p class="description">Netflix lanzó el nuevo tráiler de “Squid Game” season 2 o “El juego del calamar temporada 2”, la serie que cautivó al mundo con sus...</p>
-        </div>
-    </div>
-    <div class="news-item">
-        <img src="img/noticias/godzilla.jpeg" alt="Sin novedad en el frente">
-        <div>
-            <h4>Sin novedad en el frente triunfa en los Oscar</h4>
-            <p class="author">Por Anton</p>
-            <p class="description">La película bélica Sin Novedad en el Frente ha hecho historia en los Premios Óscar 2024, llevándose a casa algunos de los galardones más prestigiosos, incluyendo Mejor Película.....</p>
-        </div>
-    </div>
-</aside>
-</main>
-
-
-<footer>
-    <div class="footer-container">
-        <!-- Logo y enlaces de navegación a la izquierda -->
-        <div class="footer-left">
-            <img src="img/logo2.png" alt="Logo Newsflix" class="footer-logo">
-            <nav>
-                <a href="inicio.html">Inicio</a>
-                <a href="contactanos.html">Contáctanos</a>
-                <a href="nosotros.html">Sobre Nosotros</a>
-            </nav>
-        </div>
-
-        <!-- Derechos reservados y redes sociales a la derecha -->
-        <div class="footer-right">
-            <p>Todos los derechos reservados Netflix © 2024</p>
-            <div class="social-links">
-                <a href="https://www.facebook.com" target="_blank" class="social-link">
-                    <i class="fa-brands fa-facebook-f"></i>
-                </a>
-                <a href="https://www.twitter.com" target="_blank" class="social-link">
-                    <i class="fa-brands fa-twitter"></i>
-                </a>
-                <a href="https://www.instagram.com" target="_blank" class="social-link">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
+    <!-- Pie de página -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <img src="img/logo2.png" alt="Logo Newsflix" class="footer-logo">
+                <nav>
+                    <a href="inicio.html">Inicio</a>
+                    <a href="contactanos.html">Contáctanos</a>
+                    <a href="nosotros.html">Sobre Nosotros</a>
+                </nav>
+            </div>
+            <div class="footer-right">
+                <p>Todos los derechos reservados Netflix © 2024</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com" target="_blank" class="social-link">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank" class="social-link">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" class="social-link">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 </body>
+
 </html>

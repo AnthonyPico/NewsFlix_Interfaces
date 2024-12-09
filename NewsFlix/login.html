@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar Sesión - Newsflix</title>
+
+    <!-- Estilos CSS -->
     <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <!-- ============================
+         Header
+    ============================ -->
     <header>
         <div class="logo">
             <img src="img/netflix.png" alt="Newsflix Logo" class="logo-img">
@@ -14,39 +20,88 @@
         <nav class="navbar">
             <a href="hero.html">Inicio</a>
             <a href="registrarse.html">Registrarse</a>
-            <a href="login.html" class="active">Iniciar Sesion</a>
+            <a href="login.html" class="active">Iniciar Sesión</a>
         </nav>
     </header>
+
+    <!-- ============================
+         Main Content
+    ============================ -->
     <main>
         <section class="login">
-        <div class="login-container">
-            <div class="logo-newsflix">
-                <img src="img/logo.png" alt="Newsflix Logo" class="logo-img">
-            </div>
-            <h2 style="color: #ffffff">Iniciar Sesión <i class="user-icon">👤</i></h2>
-            <form id="loginForm">
-                <label for="username" style="color: #ffffff" >Usuario/Correo Electrónico</label>
-                <input type="text" id="username" placeholder="Ingrese Usuario o Correo Electrónico" required>
-                <label for="password"style="color: #ffffff" >Contraseña</label>
-                <input type="password" id="password" placeholder="Ingrese Contraseña" required>
-                <div class="remember">
-                    <input type="checkbox" id="rememberMe">
-                    <label for="rememberMe" style="color: #ffffff">Guardar Contraseña</label>
+            <div class="login-container">
+                <!-- Logo -->
+                <div class="logo-newsflix">
+                    <img src="img/logo.png" alt="Newsflix Logo" class="logo-img">
                 </div>
-                <button href="inicio.html" type="submit" class="btn">Ingresar</button>
-            </form>
-            <p><a href="registrarse.html" class="create-account" style="color:red">Crear Cuenta</a></p>
-        </div>
-    </section>
+                
+                <!-- Título -->
+                <h2 style="color: #ffffff">Iniciar Sesión <i class="fa-solid fa-user"></i></h2>
+                
+                <!-- Formulario de Inicio de Sesión -->
+                <form id="loginForm">
+                    <!-- Campo Usuario/Correo -->
+                    <label for="username" style="color: #ffffff">Usuario/Correo Electrónico</label>
+                    <input type="text" id="username" placeholder="Ingrese Usuario o Correo Electrónico" required>
+                    
+                    <!-- Campo Contraseña -->
+                    <label for="password" style="color: #ffffff">Contraseña</label>
+                    <input type="password" id="password" placeholder="Ingrese Contraseña" required>
+                    
+                    <!-- Recordar Contraseña -->
+                    <div class="remember">
+                        <input type="checkbox" id="rememberMe">
+                        <label for="rememberMe" style="color: #ffffff">Guardar Contraseña</label>
+                    </div>
+                    
+                    <!-- Botón Ingresar -->
+                    <button type="submit" class="btn">Ingresar</button>
+                </form>
+
+                <!-- Crear Cuenta -->
+                <p>
+                    <a href="registrarse.html" class="create-account" style="color:red">Crear Cuenta</a>
+                </p>
+            </div>
+        </section>
     </main>
+
+    <!-- ============================
+         Footer
+    ============================ -->
     <footer>
-        <p>Todos los derechos reservados Netflix © 2024</p>
-        <nav>
-            <a href="hero.html">Inicio</a>
-            <a href="registrarse.html">Registrarse</a>
-            <a href="login.html">Iniciar Sesion</a>
-        </nav>
+        <div class="footer-container">
+            <!-- Sección izquierda: Logo y navegación -->
+            <div class="footer-left">
+                <img src="img/logo2.png" alt="Logo Newsflix" class="footer-logo">
+                <nav>
+                    <a href="hero.html">Inicio</a>
+                    <a href="registrarse.html">Registrarse</a>
+                    <a href="login.html">Iniciar Sesión</a>
+                </nav>
+            </div>
+
+            <!-- Sección derecha: Derechos reservados y redes sociales -->
+            <div class="footer-right">
+                <p>Todos los derechos reservados Netflix © 2024</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com" target="_blank" class="social-link">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank" class="social-link">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" class="social-link">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <!-- ============================
+         JavaScript
+    ============================ -->
     <script src="scripts.js"></script>
 </body>
 </html>

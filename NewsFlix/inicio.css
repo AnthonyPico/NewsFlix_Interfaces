@@ -34,7 +34,6 @@ header {
     flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
 }
 
 .main-content {
@@ -106,6 +105,11 @@ header {
     margin: 0;
 }
 
+.right-section h4:hover {
+    color: red; /* Cambia el color del texto al pasar el cursor */
+    text-decoration: underline; /* Subraya el texto */
+}
+
 .right-section p.author {
     color: red;
     font-weight: bold;
@@ -118,7 +122,6 @@ header {
     margin: 2px 0 0 0;
 }
 
-/* Estilo para el footer */
 footer {
     background-color: #000;
     color: #fff;
@@ -134,7 +137,6 @@ footer {
     align-items: center;
 }
 
-/* Logo y enlaces de navegación */
 .footer-left {
     display: flex;
     align-items: center;
@@ -156,11 +158,11 @@ footer {
 .footer-left nav a:hover {
     text-decoration: underline;
 }
+
 footer nav a:hover {
     color: #ff0000;
 }
 
-/* Derechos reservados y redes sociales */
 .footer-right {
     display: flex;
     align-items: center;
@@ -187,7 +189,6 @@ footer nav a:hover {
 .social-link:hover {
     color: red;
 }
-
 
 /* Efecto de texto superpuesto al pasar el cursor */
 .item {

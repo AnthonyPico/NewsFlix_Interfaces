@@ -5,62 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrarse - Newsflix</title>
     <link rel="stylesheet" href="registrarse.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
         <div class="logo">
             <img src="img/netflix.png" alt="Newsflix Logo" class="logo-img">
         </div>
         <nav class="navbar">
             <a href="hero.html">Inicio</a>
-            <a href="registrarse.html" class="active" >Registrarse</a>
-            <a href="login.html">Iniciar Sesion</a>
+            <a href="registrarse.html" class="active">Registrarse</a>
+            <a href="login.html">Iniciar Sesión</a>
         </nav>
     </header>
+
+    <!-- Main -->
     <main>
+        <!-- Sección de registro -->
         <section class="register">
-        <div class="register-section">
-            <div class="form-container">
-                <div class="logo-newsflix">
-                    <img src="img/logo.png" alt="Newsflix Logo" class="logo-img">
+            <div class="register-section">
+                <div class="form-container">
+                    <!-- Logo -->
+                    <div class="logo-newsflix">
+                        <img src="img/logo.png" alt="Newsflix Logo" class="logo-img">
+                    </div>
+                    <h1 style="color: #ffffff">Crea una cuenta</h1>
+                    <!-- Formulario -->
+                    <form action="#" method="POST">
+                        <!-- Grupo: Correo Electrónico -->
+                        <div class="form-group">
+                            <label for="email" style="color: #ffffff">Correo Electrónico</label>
+                            <input type="email" id="email" name="email" placeholder="Ingresa tu correo" required>
+                        </div>
+                        <!-- Grupo: Nombre de Usuario -->
+                        <div class="form-group">
+                            <label for="username" style="color: #ffffff">Crea un nombre de usuario</label>
+                            <input type="text" id="username" name="username" placeholder="Ingresa tu nombre de usuario" required>
+                        </div>
+                        <!-- Grupo: Contraseña -->
+                        <div class="form-group">
+                            <label for="password" style="color: #ffffff">Crea una contraseña</label>
+                            <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required>
+                        </div>
+                        <!-- Grupo: Confirmar Contraseña -->
+                        <div class="form-group">
+                            <label for="confirm-password" style="color: #ffffff">Confirma contraseña</label>
+                            <input type="password" id="confirm-password" name="confirm-password" placeholder="Repite tu contraseña" required>
+                        </div>
+                        <!-- Botón de Envío -->
+                        <button type="submit" class="submit-btn">Continuar</button>
+                        <!-- Políticas y enlace de inicio de sesión -->
+                        <p class="policy-text">
+                            Al registrarte, aceptas las <a href="#">Condiciones del Servicio</a> y la <a href="#">Política de Privacidad</a> de Newsflix.
+                        </p>
+                        <p class="login-link" style="color: red">
+                            ¿Ya tienes una cuenta? <a href="login.html">Inicia sesión aquí</a>
+                        </p>
+                    </form>
                 </div>
-                <h1 style="color: #ffffff">Crear una cuenta</h1>
-                <form action="#" method="POST">
-                    <div class="form-group">
-                        <label for="email" style="color: #ffffff">Correo Electrónico</label>
-                        <input type="email" id="email" name="email" placeholder="Ingresa tu correo" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="username" style="color: #ffffff">Crea un nombre de usuario</label>
-                        <input type="text" id="username" name="username" placeholder="Ingresa tu nombre de usuario" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="password" style="color: #ffffff">Crea una contraseña</label>
-                        <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="confirm-password" style="color: #ffffff" >Confirma contraseña</label>
-                        <input type="password" id="confirm-password" name="confirm-password" placeholder="Repite tu contraseña" required>
-                    </div>
-                    <button type="submit" class="submit-btn">Continuar</button>
-                    <p class="policy-text">
-                        Al registrarte, aceptas las <a href="#">Condiciones del Servicio</a> y la <a href="#">Política de Privacidad</a> de Newsflix.
-                    </p>
-                    <p class="login-link" style="color: red">
-                        ¿Ya tienes una cuenta? <a href="#">Inicia sesión aquí</a>.
-                    </p>
-                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <!-- Sección izquierda: Logo y navegación -->
+            <div class="footer-left">
+                <img src="img/logo2.png" alt="Logo Newsflix" class="footer-logo">
+                <nav>
+                    <a href="hero.html">Inicio</a>
+                    <a href="registrarse.html">Registrarse</a>
+                    <a href="login.html">Iniciar Sesión</a>
+                </nav>
+            </div>
+            <!-- Sección derecha: Derechos reservados y redes sociales -->
+            <div class="footer-right">
+                <p>Todos los derechos reservados Netflix © 2024</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com" target="_blank" class="social-link">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank" class="social-link">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" class="social-link">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
             </div>
         </div>
-    </section>
-    </main>
-    <footer>
-        <p>Todos los derechos reservados Netflix © 2024</p>
-        <nav>
-            <a href="hero.html">Inicio</a>
-            <a href="registrarse.html">Registrarse</a>
-            <a href="login.html">Iniciar Sesion</a>
-        </nav>
     </footer>
 </body>
 </html>
