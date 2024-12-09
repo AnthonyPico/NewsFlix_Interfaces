@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
-    
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Newsflix</title>
     <link rel="stylesheet" href="hero.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
 </head>
 
-
 <body>
+    <!-- Encabezado -->
     <header>
         <div class="logo">
             <img src="img/netflix.png" alt="Newsflix Logo" class="logo-img">
@@ -17,11 +19,12 @@
         <nav class="navbar">
             <a href="inicio.html" class="active">Inicio</a>
             <a href="registrarse.html">Registrarse</a>
-            <a href="login.html">Iniciar Sesion</a>
+            <a href="login.html">Iniciar Sesión</a>
         </nav>
     </header>
 
     <main>
+        <!-- Sección Hero -->
         <section class="hero">
             <div class="hero-container">
                 <div class="hero-content">
@@ -37,9 +40,15 @@
                     <img src="img/promo.png" alt="Newsflix Promo">
                 </div>
             </div>
+
+            <!-- Categorías -->
             <div class="categories">
                 <h2>Categorías</h2>
-                <p>Aquí encontrarás los diferentes apartados que usaremos</p>
+                <p>
+                    Aquí encontrarás los diferentes apartados que usaremos para mantenerte al tanto del mundo del entretenimiento:
+                    Noticias para las últimas actualizaciones, Entrevistas exclusivas con tus artistas favoritos, Adelantos exclusivos
+                    con tráileres y avances, Reseñas para decidir qué ver y más contenido diseñado para ti. ¡Explora y disfruta!
+                </p>
                 <div class="category-grid">
                     <div class="category">
                         <span>Entrevistas</span>
@@ -61,7 +70,7 @@
             </div>
         </section>
 
-
+        <!-- Sección Contacto -->
         <section class="register">
             <div class="register-section">
                 <div class="form-container">
@@ -69,32 +78,53 @@
                     <form>
                         <label for="name" style="color: #ffffff;">Nombre*</label>
                         <input type="text" id="name" placeholder="Ingresa tu nombre" required>
-                        
+
                         <label for="subject" style="color: #ffffff;">Asunto*</label>
                         <input type="text" id="subject" placeholder="Escribe el asunto">
-                        
+
                         <label for="email" style="color: #ffffff;">Correo Electrónico*</label>
                         <input type="email" id="email" placeholder="ejemplo@correo.com" required>
-                        
+
                         <label for="message" style="color: #ffffff;">Mensaje*</label>
                         <textarea id="message" rows="10" placeholder="Escribe tu mensaje" required></textarea>
-                        
+
                         <button type="submit" class="submit-btn">Enviar</button>
                     </form>
                 </div>
             </div>
         </section>
-
     </main>
 
+    <!-- Pie de página -->
     <footer>
-        <p>Todos los derechos reservados Netflix © 2024</p>
-        <nav>
-            <a href="hero.html">Inicio</a>
-            <a href="registrarse.html">Registrarse</a>
-            <a href="login.html">Iniciar Sesion</a>
-        </nav>
-    </footer>
+        <div class="footer-container">
+            <!-- Sección izquierda: Logo y navegación -->
+            <div class="footer-left">
+                <img src="img/logo2.png" alt="Logo Newsflix" class="footer-logo">
+                <nav>
+                    <a href="hero.html">Inicio</a>
+                    <a href="registrarse.html">Registrarse</a>
+                    <a href="login.html">Iniciar Sesión</a>
+                </nav>
+            </div>
 
+            <!-- Sección derecha: Derechos reservados y redes sociales -->
+            <div class="footer-right">
+                <p>Todos los derechos reservados Netflix © 2024</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com" target="_blank" class="social-link">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank" class="social-link">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" class="social-link">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
