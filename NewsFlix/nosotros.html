@@ -29,6 +29,35 @@
             </form>
         </div>
 
+                       <!-- Botón para abrir el menú -->
+                       <button id="menuButton" class="menu-btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <!-- Menú desplegable -->
+                <div id="sideMenu" class="side-menu">
+                    <button id="closeMenu" class="close-btn">&times;</button>
+    
+                    <div class="menu-logo">
+                        <img src="img/logo.png" alt="Logo" />
+                    </div>
+                    <nav>
+                        <a href="inicio.html">Inicio</a>
+                        <a href="noticias.html">Noticias</a>
+                        <a href="resenas.html">Reseñas</a>
+                        <a href="entrevistas.html">Entrevistas</a>
+                        <a href="adelantos.html">Adelantos</a>
+                        <a href="contactanos.html">Contáctanos</a>
+                        <a href="nosotros.html">Nosotros</a>
+                    </nav>
+                    
+                    <div class="social-links">
+                        <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+
     </header>
 
     <main>
@@ -59,7 +88,7 @@
                         </div>
                         <div class="card">
                             <div class="image-container">
-                                <img src="img/team2.png" alt="Miembro del equipo 2">
+                                <img src="img/nosotros/sensa.png" alt="Miembro del equipo 2">
                                 <div class="overlay">
                                     <p>Crítico - Innovador</p>
                                 </div>
@@ -67,7 +96,7 @@
                         </div>
                         <div class="card">
                             <div class="image-container">
-                                <img src="img/team3.png" alt="Miembro del equipo 3">
+                                <img src="img/nosotros/film.jpg" alt="Miembro del equipo 3">
                                 <div class="overlay">
                                     <p>AXLKSS - Editor Jefe</p>
                                 </div>
@@ -75,7 +104,7 @@
                         </div>
                         <div class="card">
                             <div class="image-container">
-                                <img src="img/team3.png" alt="Miembro del equipo 3">
+                                <img src="img/nosotros/axl.jpg" alt="Miembro del equipo 3">
                                 <div class="overlay">
                                     <p>AXLKSS - Editor Jefe</p>
                                 </div>
@@ -116,5 +145,21 @@
             </div>
         </div>
     </footer>
+    <script>
+        // Control del menú desplegable
+        const menuButton = document.getElementById("menuButton");
+        const sideMenu = document.getElementById("sideMenu");
+        const closeMenu = document.getElementById("closeMenu");
+
+        // Abrir menú
+        menuButton.addEventListener("click", () => {
+            sideMenu.style.right = "0";
+        });
+
+        // Cerrar menú
+        closeMenu.addEventListener("click", () => {
+            sideMenu.style.right = "-100%";
+        });
+    </script>
 </body>
 </html>

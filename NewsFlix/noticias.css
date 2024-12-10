@@ -345,3 +345,109 @@ footer nav a:hover {
 .view-more a:hover {
     background-color: #b00710;
 }
+
+
+/* Menú desplegable */
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100%;
+    background-color: #111;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.7);
+    overflow-y: auto;
+    transition: right 0.3s ease;
+    z-index: 1000;
+    padding: 20px;
+    color: white;
+}
+
+/* Logo en el menú */
+.menu-logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menu-logo img {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Estilizar las secciones */
+.side-menu nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+    font-size: 18px;
+    border-bottom: 1px solid #333;
+    transition: background 0.3s, color 0.3s;
+}
+
+.side-menu nav a:hover {
+    color: red;
+}
+
+/* Título de las redes sociales */
+.social-title {
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+/* Redes sociales */
+.side-menu .social-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 140px;
+}
+
+.side-menu .social-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    transition: color 0.3s;
+}
+
+.side-menu .social-links a:hover {
+    color: red;
+}
+
+/* Botón para cerrar el menú */
+.close-btn {
+    font-size: 24px;
+    color: white;
+    background: none;
+    border: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.close-btn:hover {
+    transform: scale(1.1);
+    color: red;
+}
+
+/* Botón del menú (icono de barras) */
+.menu-btn {
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
