@@ -152,7 +152,7 @@ footer nav a:hover {
 
 .description {
     font-size: 20px; /* Tamaño más pequeño */
-    margin: 0 auto 20px; /* Centrado horizontal con margen inferior */
+    margin: 0 auto ; /* Centrado horizontal con margen inferior */
     max-width: 8000px; /* Limita el ancho del texto */
     text-align: center; /* Centra el texto */
     color: gray;
